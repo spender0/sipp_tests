@@ -51,7 +51,7 @@
   </send>
 
   <!-- Delay our response -->
-  <pause milliseconds="1000"/>
+  <pause milliseconds="500"/>
   <send>
     <![CDATA[
       SIP/2.0 180 Ringing
@@ -87,11 +87,13 @@
     ]]>
   </send>
 
-  <recv request="ACK"
-        optional="true"
-        rtd="true"
-        crlf="true">
-  </recv>
+  <recv request="ACK" optional="false" rtd="true" crlf="true"> </recv>
+
+  <nop>
+  <action>
+    <exec play_pcap_audio="callee.pcap"/>
+  </action>
+  </nop>
 
   <recv request="BYE">
   </recv>

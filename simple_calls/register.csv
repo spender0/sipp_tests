@@ -1,4 +1,4 @@
 SEQUENTIAL
 #user;domain;auth;contact_port
-101;sip.example.com;[authentication username=101 password=123];5062
-102;sip.example.com;[authentication username=101 password=123];5062
+101;localhost;[authentication username=101 password=123];5062
+102;localhost;[authentication username=102 password=123];5062

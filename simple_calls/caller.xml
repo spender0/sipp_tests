@@ -121,7 +121,11 @@
     ]]>
   </send>
 
-  <pause milliseconds="6000"/>
+  <nop>
+    <action>
+      <exec play_pcap_audio="callee.pcap"/>
+    </action>
+  </nop>
   
   <send retrans="500">
     <![CDATA[

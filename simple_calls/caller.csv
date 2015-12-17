@@ -1,4 +1,4 @@
 SEQUENTIAL
-#user a;user a domain;user a auth;user b;user b domain
-100;localhost;[authentication username=100 password=123];101;localhost
-100;localhost;[authentication username=100 password=123];102;localhost
+#user a;user a domain;user a auth;user b;user b domain;
+100;localhost;[authentication username=100 password=123];101;localhost;
+100;localhost;[authentication username=100 password=123];102;localhost;
